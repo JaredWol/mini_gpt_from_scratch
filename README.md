@@ -1,15 +1,32 @@
-# mini_gpt_from_scratch
-My own mini_gpt
+# ---------------------------------------------
+# File: README.md
+# ---------------------------------------------
+# Mini GPT Shakespeare
 
-## Description
-This project is to learn and build my own GPT from scratch using Python and PyTorch.
+A **character-level Mini GPT** built and trained on `tinyshakespeare.txt` for learning GPT internals.
 
 ## Features
-- Tokenization
-- Training loop
-- Sampling outputs
+- Custom GPT architecture using PyTorch
+- Trains on Shakespeare text
+- Generates Shakespeare-style text
 
-## TODO
-- Add model architecture
-- Add dataset preprocessing
-- Add training script
+## Setup
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Place `tinyshakespeare.txt` in the project folder. Download from [tinyshakespeare](https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt).
+
+## Training
+Run:
+```bash
+python mini_gpt_train.py
+```
+
+## Example Output
+> ELOUCESTER:
+> I am looke, merry dishe counter,--
+
+## License
+MIT
